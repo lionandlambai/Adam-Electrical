@@ -1,0 +1,32 @@
+ADAM ELECTRICAL — GITHUB BROWSER UPLOAD
+
+1. Upload every file and folder in this package to the root of:
+   https://github.com/lionandlambai/Adam-Electrical
+
+2. The .openai folder is intentionally omitted. It is not required for
+   GitHub or Cloudflare deployment.
+
+3. After the regular files are uploaded, open the repository on GitHub.
+
+4. Click Add file, then Create new file.
+
+5. In the filename box enter this exact path:
+   .github/workflows/deploy-cloudflare.yml
+
+6. Open the visible file named DEPLOY-CLOUDFLARE-WORKFLOW.yml from this
+   package, copy all its contents, and paste them into GitHub's editor.
+
+7. Click Commit changes.
+
+8. In GitHub repository Settings, open:
+   Secrets and variables > Actions
+
+9. Add these two repository secrets:
+   CLOUDFLARE_ACCOUNT_ID
+   CLOUDFLARE_API_TOKEN
+
+10. Open Actions, select Deploy to Cloudflare, and choose Run workflow.
+
+The visible DEPLOY-CLOUDFLARE-WORKFLOW.yml file is only a template. Once the
+hidden workflow has been created on GitHub, you may delete the visible template
+from the repository.
