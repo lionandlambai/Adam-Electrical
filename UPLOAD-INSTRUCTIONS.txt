@@ -1,0 +1,20 @@
+ADAM ELECTRICAL — NAVIGATION AND SLIDESHOW FIX
+
+This package includes:
+- working Services and Gallery navigation using normal browser links;
+- a corrected Contact link from every page;
+- eager loading and preloading for the eight homepage slideshow images;
+- slideshow images that remain visible without framework-controlled navigation;
+- the earlier Cloudflare build fixes for deployments without .openai.
+
+Upload all files in this package to the root of the GitHub repository and
+replace files when GitHub asks. Commit the changes, then retry the Cloudflare
+deployment.
+
+If browser uploading only the changed files, replace these:
+  app/components.tsx
+  app/page.tsx
+  app/globals.css
+  vite.config.ts
+
+The hidden .openai folder is not required.
